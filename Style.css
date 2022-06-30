@@ -1,0 +1,279 @@
+body{
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #E5645E;
+}
+.homepage{
+    background: #E2E0FF url("Images/Webp.net-resizeimage.png") no-repeat center;
+}
+.about{
+    background: #E2E0FF url("Images/Webp.net-resizeimage (1).png") no-repeat center;
+}
+.hobbies{
+    background: #E2E0FF url("Images/Webp.net-resizeimage (3).png") no-repeat center;
+}
+.contact{
+    background: #E2E0FF url("Images/Webp.net-resizeimage (2).png") no-repeat center;
+}
+#section{
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+}
+#section > nav{
+    position: relative;
+    margin-top: 50px;
+    width: 120px;
+    height: 510px;
+}
+nav li{
+    margin-top: -5px;
+    margin-left: -40px;
+    padding-top: 45px;
+    text-decoration: none;
+    list-style: none;
+    width: 120px;
+    height: 100px;
+    background-image: url("Images/Untitled design (2).png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+nav li.active{
+    background-image: url("Images/active-2.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+#intro{
+    position: relative;
+    margin-left: 180px;
+    margin-top: -430px;
+    width: 550px;
+    height: 400px;
+}
+#info{
+    position: relative;
+    margin-left: 290px;
+    margin-top: -464px;
+    width: 570px;
+    height: 380px;
+}
+#hobby{
+    position: relative;
+    margin-left: 160px;
+    margin-top: -495px;
+    width: 288px;
+    height: 458px;
+}
+#contacts{
+    position: relative;
+    margin-left: 280px;
+    margin-top: -485px;
+    width: 592px;
+    height: 305px;
+}
+#photo_1{
+    background-image: url("Images/Otter.png");
+    position: relative;
+    margin-left: 491px;
+    margin-top: -402px;
+    width: 215px;
+    height: 312px;
+}
+#photo_2{
+    background-image: url("Images/Jackson.png");
+    position: relative;
+    margin-left: 757px;
+    margin-top: -328px;
+    width: 215px;
+    height: 312px;
+}
+#portrait{
+    background-image: url("Images/Portrait.png");
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 753px;
+    margin-top: -367px;
+    width: 322px;
+    height: 308px;
+}
+#hobby h1{
+    background-image: url("Images/hobby.png");
+    margin-left: 44px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 40px;
+    color: transparent;
+}
+#hobby h2{
+    font-size: 18px;
+    background-image: url("Images/Heart.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+    width: 120px;
+    height: 23px;
+    margin-left: 65px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-left: 45px;
+    font-weight: 100;
+}
+#hobby p{
+    margin-top: -10px;
+    width: 240px;
+    height: 90px;
+    margin-left: 40px;
+}
+#info div{
+    margin-left: 2px;
+    margin-top: 15px;
+    text-align: center;
+    float: left;
+    width: 282px;
+    height: 350px;
+}
+#intro h1{
+    position: absolute;
+    background-image: url("Images/Welcome.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: transparent;
+    top: 80px;
+    margin-left: 70px;
+    text-align: center;
+    width: 400px;
+    height: 84px;
+}
+#intro p{
+    position: absolute;
+    background-image: url("Images/intro.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 45px;
+    top: 155px;
+    height: 100px;
+    text-align: center;
+    width: 450px;
+    color: transparent;
+}
+#contacts p{
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    width: 148px;
+    height: 190px;
+    background-color: white;
+}
+nav a {
+    background-image: linear-gradient(
+            to right,
+            #E5645E,
+            #E5645E 50%,
+            #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:before {
+    content: '';
+    background: #E5645E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-position: 0;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+.active:after{
+    content: '';
+    background: #E5645E;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.zoom {
+    transition: transform .3s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(1.2);
+}
+.education, .life{
+    height: 40px;
+    width: 200px;
+    margin-left: 45px;
+    color: transparent;
+}
+.education{
+    background-image: url("Images/education.png");
+}
+.life{
+    background-image: url("Images/life.png");
+}
+#phone, #book, #email, #address{
+    display: block;
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 40px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+#phone:hover, #book:hover, #email:hover, #address:hover{
+    background-color: white;
+    opacity: 0.7;
+}
+#phone{
+    background-image: url("Images/phone.png");
+}
+#email{
+    background-image: url("Images/mail.png");
+}
+#book {
+    background-image: url("Images/facebook.png");
+}
+#address{
+    background-image: url("Images/adress.png");
+}
+#sidebar{
+    width: 120px;
+    height: 510px;
+    background-image: url("Images/sidebar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 200px;
+    color: transparent;
+}
